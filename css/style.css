@@ -159,9 +159,13 @@ img {
 }
 
 .site-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 940px;
   list-style: none;
   text-align: center;
 }
+
 .site-navigation a {
   color: var(--basic-white);
 }
@@ -177,10 +181,32 @@ img {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px;
+  width: 940px;
+  height: 356;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 13px;
   background-color: var(--basic-white);
   color: var(--basic-black);
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+.index-columns h2 {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.delivery-info {
+  width: 478px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.contact-info {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
 }
 
 .index-columns h2 {
@@ -486,4 +512,87 @@ img {
 
 .product-items-actions {
   display: none;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.logo {
+  order: 0;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.header-navigation {
+  width: 940px;
+  margin: 0;
+  padding: 0;
+
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.button-with-icon {
+  padding-left: 50px;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 940px;
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.user-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+  margin-bottom: 60px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 46px;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-navigation {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
 }
