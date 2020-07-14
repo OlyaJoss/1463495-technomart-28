@@ -17,7 +17,6 @@ try {
   isStorageSupport = false;
 }
 
-
  writeUsLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   writeUsPopUp.classList.add("modal-show");
